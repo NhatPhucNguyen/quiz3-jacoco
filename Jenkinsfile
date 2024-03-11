@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     // Your build steps here
-                    sh 'mvn clean install'
+                    bat 'mvn clean install'
                 }
             }
         }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     // Generate code coverage report using Jacoco
-                    sh 'mvn jacoco:report'
+                    bat 'mvn jacoco:report'
                 }
             }
         }
