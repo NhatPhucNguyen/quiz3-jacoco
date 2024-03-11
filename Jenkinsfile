@@ -1,6 +1,9 @@
 pipeline {
     agent any
-
+    tools {
+            maven 'MAVEN'
+            jdk 'JDK'
+    }
     triggers {
         cron('H/10 * * * 1') // Run every 10 minutes on Mondays
     }
